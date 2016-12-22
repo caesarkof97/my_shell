@@ -5,13 +5,12 @@
 	> Created Time: 2016年12月20日 星期二 15时55分12秒
  ************************************************************************/
 
-#include<stdio.h>
+#include "hello.h"
 extern int valueB, valueA;
 extern char __executable_start[];
 extern char etext[], _etext[], __etext[];
 extern char edata[], _edata[];
 extern char end[], _end[];
-int add(int, int);
 int main(){
 	valueB = 200;
 	printf("Hello World!\n%d\n", add(valueA, valueB));
