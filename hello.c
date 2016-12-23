@@ -14,6 +14,7 @@ extern char end[], _end[];
 int main(){
 	valueB = 200;
 	printf("Hello World!\n%d\n", add(valueA, valueB));
+	printf("%d\n", add_add(valueA, valueB));
 	printf("Executable Start %x\n", __executable_start);
 	printf("Text End %x %x %x\n", etext, _etext, __etext);
 	printf("Data End %x %x \n", edata, _edata);

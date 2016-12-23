@@ -1,10 +1,13 @@
 /*************************************************************************
-	> File Name: hello.h
+	> File Name: add_2.c
 	> Author: ma6174
 	> Mail: ma6174@163.com 
-	> Created Time: 2016年12月22日 星期四 16时54分54秒
+	> Created Time: 2016年12月22日 星期四 21时12分10秒
  ************************************************************************/
 
-#include <stdio.h>
-int add_add(int, int);
-int add(int, int);
+#include "hello.h"
+int add_add(int a, int b){
+	int c = add(a, b);
+	return add(c, c);
+}
+
